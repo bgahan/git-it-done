@@ -19,10 +19,10 @@ var forSubmitHandler = function (event) {
 
 var getUserRepos = function (user) {
     // format the github api url
-    var apiURL = "https://api.github.com/users/" + user + "/repos";
+    var apiUrl = "https://api.github.com/users/" + user + "/repos";
 
     // make a request to the url
-    fetch(apiURL)
+    fetch(apiUrl)
         .then(function (response) {
             // request was successful
             if (response.ok) {
